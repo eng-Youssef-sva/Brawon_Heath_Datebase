@@ -1,0 +1,476 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09",
+        "type": "Table",
+        "position": {
+          "x": 1140.5269503048971,
+          "y": -751.0187013254366
+        },
+        "data": {
+          "label": "Doctors",
+          "isConnectable": true,
+          "columns": [
+            {
+              "id": "56948abf-56a7-482a-8e51-eaab7c0d23af",
+              "name": "ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "7f88223c-5106-4f5e-9ce4-c81ec6250103",
+              "name": "DOC_Name",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "1ab21a02-dc13-46a6-af26-bb811750e41f",
+              "name": "DOC_Email",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "0db30d8a-d184-4119-bdd7-900fc2136ff9",
+              "name": "DOC_phone_Number",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "d62dfe89-f71c-4af5-b7f9-f6b72a67becf",
+              "name": "Specialty",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "ca1da5b1-55a7-4cdb-960a-bf438469607e",
+              "name": "Experince_Years",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "fk_a7babf78-31fa-4e08-a2ae-641b114c2eda",
+              "name": "fk_Prescription",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "059f0384-9c06-4633-8263-382f422670d9",
+                "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+                "columns": [
+                  {
+                    "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                    "name": "PrescriptionID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 200
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "400e364f-39f5-48f6-a3fd-e79dbf15ca5e",
+        "type": "Table",
+        "position": {
+          "x": 1511.7205445249358,
+          "y": -772.1348975451573
+        },
+        "data": {
+          "label": "Patients",
+          "isConnectable": true,
+          "columns": [
+            {
+              "id": "b8145390-2ed4-4a28-a95c-04a7a73a9439",
+              "name": "UR_Number",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "66c8410a-7562-45de-a58e-569a8b6d77ad",
+              "name": "Addresses",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "07b98372-9661-429b-9e79-bdbf9c440c12",
+              "name": "Name",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "e98718b2-8733-4a58-9496-909fa4b93981",
+              "name": "Age",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "2c0e3778-2bc3-4a46-9973-18d41a6270f9",
+              "name": "Email",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "b064026a-0cd1-4a3a-b3b3-58792294e6b5",
+              "name": "Phone_number",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "4b0d5f99-c5a6-4109-bdde-f3fb8295e160",
+              "name": "Medicar_card_number",
+              "type": "INT",
+              "position": 0
+            },
+            {
+              "id": "fk_4c3a580b-a0c5-448c-a187-bd9968d1e57a",
+              "name": "fk_Doctors",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "accc29ae-04dd-4b74-ae48-d744515b28b1",
+                "sourceTableId": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09",
+                "columns": [
+                  {
+                    "id": "fk_56948abf-56a7-482a-8e51-eaab7c0d23af",
+                    "name": "ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_f7c088ce-2c96-4435-bf62-20844e403a03",
+              "name": "fk_Prescription",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "6ffc216e-66ab-4a43-88a7-621b3fa8b51d",
+                "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+                "columns": [
+                  {
+                    "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                    "name": "PrescriptionID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 250
+        },
+        "selected": true,
+        "dragging": false
+      },
+      {
+        "id": "e0e40178-a006-4e73-9f53-9c049ee77e77",
+        "type": "Table",
+        "position": {
+          "x": 1782.110895909705,
+          "y": -466.79609789824417
+        },
+        "data": {
+          "label": "Pharmaceuical_Companies",
+          "isConnectable": true,
+          "columns": [
+            {
+              "id": "37aa417c-612f-454a-b9ed-9295f57c367d",
+              "name": "Comp_Name",
+              "type": "INT",
+              "position": 0,
+              "isUnique": true,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "77c06c26-e628-4d98-992b-ef90b7844acd",
+              "name": "Comp_Phone_Number",
+              "type": "INT",
+              "position": 0,
+              "isUnique": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "06eed8fc-ce6c-4e85-ab1d-4952b2a1d19f",
+              "name": "Comp_Adresses",
+              "type": "INT",
+              "position": 0,
+              "isUnique": false,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 124
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "1a71dd0e-f179-4f37-b160-e81297f66d9b",
+        "type": "Table",
+        "position": {
+          "x": 1484.2566243888434,
+          "y": -472.02101312409826
+        },
+        "data": {
+          "label": "Drug",
+          "isConnectable": true,
+          "columns": [
+            {
+              "id": "ab290b23-2d88-4ac8-99a0-5dffbd345de2",
+              "name": "Drug_strength",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "004d7a82-dd73-4f7d-91fb-3b034d5ddb7e",
+              "name": "Trade_Name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_ccff7c63-9a34-4c2a-83bb-c7b517102b36",
+              "name": "fk_Pharmaceuical_Companies",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "59410909-6069-4770-9571-520767ad9c0a",
+                "sourceTableId": "e0e40178-a006-4e73-9f53-9c049ee77e77",
+                "columns": [
+                  {
+                    "id": "fk_37aa417c-612f-454a-b9ed-9295f57c367d",
+                    "name": "Comp_Name",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_a3e0f7dd-4270-4807-9b75-4f4791433e14",
+              "name": "fk_Prescription",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "5ce5ee3c-4652-47f8-a6a2-b5138a69cd02",
+                "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+                "columns": [
+                  {
+                    "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                    "name": "PrescriptionID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+        "type": "Table",
+        "position": {
+          "x": 1139.9490662517464,
+          "y": -471.8598920839661
+        },
+        "data": {
+          "label": "Prescription",
+          "isConnectable": true,
+          "columns": [
+            {
+              "id": "27275234-e815-4d67-9f1f-717599d05d11",
+              "name": "Date",
+              "type": "INT",
+              "position": 0,
+              "isOptional": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "5d32cb22-e121-4693-9555-3a5ea4862f5f",
+              "name": "Quantity",
+              "type": "INT",
+              "position": 1,
+              "isOptional": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "8b43a609-2276-4af8-b80f-52858822a574",
+              "name": "PrescriptionID",
+              "type": "INT",
+              "position": 1,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false,
+          "isFactTable": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 100
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09->400e364f-39f5-48f6-a3fd-e79dbf15ca5e_accc29ae-04dd-4b74-ae48-d744515b28b1",
+        "type": "Relational",
+        "source": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09",
+        "targetHandle": "foreign-key-handle-accc29ae-04dd-4b74-ae48-d744515b28b1",
+        "target": "400e364f-39f5-48f6-a3fd-e79dbf15ca5e",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "accc29ae-04dd-4b74-ae48-d744515b28b1",
+            "sourceTableId": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09",
+            "columns": [
+              {
+                "id": "fk_56948abf-56a7-482a-8e51-eaab7c0d23af",
+                "name": "ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e0e40178-a006-4e73-9f53-9c049ee77e77->1a71dd0e-f179-4f37-b160-e81297f66d9b_59410909-6069-4770-9571-520767ad9c0a",
+        "type": "Relational",
+        "source": "e0e40178-a006-4e73-9f53-9c049ee77e77",
+        "targetHandle": "foreign-key-handle-59410909-6069-4770-9571-520767ad9c0a",
+        "target": "1a71dd0e-f179-4f37-b160-e81297f66d9b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "59410909-6069-4770-9571-520767ad9c0a",
+            "sourceTableId": "e0e40178-a006-4e73-9f53-9c049ee77e77",
+            "columns": [
+              {
+                "id": "fk_37aa417c-612f-454a-b9ed-9295f57c367d",
+                "name": "Comp_Name",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e1933610-05f0-4aa6-84a3-94cb6d29070e->59c3d8ae-15cd-45d1-80c3-28d51ce83b09_059f0384-9c06-4633-8263-382f422670d9",
+        "type": "Relational",
+        "source": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+        "targetHandle": "foreign-key-handle-059f0384-9c06-4633-8263-382f422670d9",
+        "target": "59c3d8ae-15cd-45d1-80c3-28d51ce83b09",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "059f0384-9c06-4633-8263-382f422670d9",
+            "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+            "columns": [
+              {
+                "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                "name": "PrescriptionID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e1933610-05f0-4aa6-84a3-94cb6d29070e->1a71dd0e-f179-4f37-b160-e81297f66d9b_5ce5ee3c-4652-47f8-a6a2-b5138a69cd02",
+        "type": "Relational",
+        "source": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+        "targetHandle": "foreign-key-handle-5ce5ee3c-4652-47f8-a6a2-b5138a69cd02",
+        "target": "1a71dd0e-f179-4f37-b160-e81297f66d9b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "5ce5ee3c-4652-47f8-a6a2-b5138a69cd02",
+            "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+            "columns": [
+              {
+                "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                "name": "PrescriptionID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e1933610-05f0-4aa6-84a3-94cb6d29070e->400e364f-39f5-48f6-a3fd-e79dbf15ca5e_6ffc216e-66ab-4a43-88a7-621b3fa8b51d",
+        "type": "Relational",
+        "source": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+        "targetHandle": "foreign-key-handle-6ffc216e-66ab-4a43-88a7-621b3fa8b51d",
+        "target": "400e364f-39f5-48f6-a3fd-e79dbf15ca5e",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "6ffc216e-66ab-4a43-88a7-621b3fa8b51d",
+            "sourceTableId": "e1933610-05f0-4aa6-84a3-94cb6d29070e",
+            "columns": [
+              {
+                "id": "fk_8b43a609-2276-4af8-b80f-52858822a574",
+                "name": "PrescriptionID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": -891.092204221161,
+      "y": 828.4161806784846,
+      "zoom": 0.8965493691475743
+    }
+  },
+  "name": "Barwon_Health_Relational-Schema",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 387517
+  },
+  "id": 584517,
+  "updatedAtTimestamp": 1789368681
+}
